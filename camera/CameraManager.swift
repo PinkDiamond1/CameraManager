@@ -732,6 +732,8 @@ open class CameraManager: NSObject, AVCaptureFileOutputRecordingDelegate, UIGest
             return isMirrored ? .upMirrored : .up
         case .landscapeRight:
             return isMirrored ? .downMirrored : .down
+        case .portraitUpsideDown:
+            return .left
         default:
             break
         }
